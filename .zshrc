@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="avit"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -97,6 +97,6 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
-source $ZSH/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 alias tcc-go-to="cd ~/Projects/TCC/TCC_II/ArtificialFruit/"
 alias ic-go-to="cd ~/Projects/IC2/"
