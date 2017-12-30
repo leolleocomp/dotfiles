@@ -5,8 +5,8 @@
 "   @author leolle
 
 " enable 256-color
-set t_Co=256
-
+set t_Co=256    
+   
 call pathogen#helptags()
 exec pathogen#infect('bundle/{}', '~/Projects/vim_config/plugins/{}')
 set nocompatible
@@ -26,7 +26,7 @@ syntax on
 " line numbering
 set number
 
-" different indentation according to filetype 
+" different indentation according to filetype
 filetype plugin indent on
 
 " --TAB config
@@ -70,7 +70,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0 
+let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_closurecompiler_path = "/usr/local/bin/google-closure-compiler-js"
 let g:sytnastic_javascript_checkers = ['jshint']
 let g:sytnastic_typescript_checkers = ['tsuquyomi']
@@ -109,6 +109,8 @@ fun! TrimWhitespace()
     %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+:autocmd BufWritePost * call TrimWhitespace()
 
 noremap <F5> :call TrimWhitespace()<CR>
 
