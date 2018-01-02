@@ -101,5 +101,5 @@ source ${ZSH}/oh-my-zsh.sh
 alias tcc-go-to="cd ~/Projects/TCC/TCC_II/ArtificialFruit/"
 alias ic-go-to="cd ~/Projects/IC2/"
 
-export ANDROID_HOME=/opt/android-sdk
+export ANDROID_HOME=~/Android/Sdk
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
