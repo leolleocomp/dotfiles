@@ -133,12 +133,14 @@ set wildignore+=*/vendor/*
 set wildignore+=*/public/*
 
 " - CtrlP directories ignored by CtrlP
-let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore={
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'file': '\v\.(exe|so|dll|swp)$',
   \ 'link': '',
   \ }
+
+" ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " - removing trailing whitespace
 "   as exposed in the following answer in stackoverflow
