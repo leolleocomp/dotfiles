@@ -146,7 +146,12 @@ let g:ctrlp_custom_ignore={
 
 fun! TrimWhitespace() abort
     let l:save=winsaveview()
-    %s/\s\+$//e
+
+	" .md files are space sensitive
+	if match(expand('%'), '.*\.md$') == -1
+		%s/\s\+$//e
+	endif
+
     call winrestview(l:save)
 endfun
 

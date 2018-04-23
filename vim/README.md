@@ -1,6 +1,6 @@
 # TheVimConfig
 
-A simple vim config file for personal usage and
+A simple vim config file for personal usage and  
 self-learning purporses. Under development...
 
 Is this another vim config file in the world? yes it is!
