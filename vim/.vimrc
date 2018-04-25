@@ -14,8 +14,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'scrooloose/syntastic'
+Plugin 'valloric/youcompleteme'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'w0rp/ale'
 Plugin 'tpope/vim-surround'
 Plugin 'henrynewcomer/vim-theme-papaya'
 Plugin 'bling/vim-airline'
