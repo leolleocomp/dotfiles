@@ -79,7 +79,6 @@ set hlsearch     " highlight search terms
 set laststatus=2 " all the time status bar
 
 " syntax highlight
-set t_Co=256 " enable 256-color
 syntax on
 
 " fancy colorscheme
