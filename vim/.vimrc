@@ -24,7 +24,7 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
-
+Plugin 'grassdog/tagman.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
