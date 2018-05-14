@@ -33,6 +33,9 @@ filetype plugin indent on
 
 " END PLUGIN SETUP
 
+" stup vim autocomplete
+set omnifunc=syntaxcomplete#Complete
+
 " setup file specific indentation
 set autoindent
 
@@ -61,9 +64,6 @@ set confirm
 
 " Enable use of the mouse for all modes
 set mouse=a
-
-" line numbering
-set number
 
 " set foldmethod
 set foldmethod=indent
