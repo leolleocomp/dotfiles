@@ -23,6 +23,7 @@ Plugin 'stanangeloff/php.vim'
 Plugin 'jwalton512/vim-blade'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'mileszs/ack.vim'
+Plugin 'majutsushi/tagbar'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -125,6 +126,11 @@ let g:ctrlp_custom_ignore={
 
 " ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Tags related mappings
+
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 " - removing trailing whitespace
 "   as exposed in the following answer in stackoverflow
