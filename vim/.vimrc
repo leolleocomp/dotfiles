@@ -14,12 +14,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-
-Plugin 'crusoexia/vim-monokai'
+Plugin 'larssmit/vim-getafe'
+Plugin 'sickill/vim-monokai'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-surround'
-Plugin 'henrynewcomer/vim-theme-papaya'
 Plugin 'bling/vim-airline'
 Plugin 'stanangeloff/php.vim'
 Plugin 'jwalton512/vim-blade'
@@ -84,7 +83,7 @@ set laststatus=2 " all the time status bar
 syntax on
 
 " fancy colorscheme
-colorscheme monokai
+colorscheme getafe
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
