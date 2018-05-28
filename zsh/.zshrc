@@ -99,3 +99,4 @@ fi
 
 source ${ZSH}/oh-my-zsh.sh
 alias tmux='tmux -2'
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
