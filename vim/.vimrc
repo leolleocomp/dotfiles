@@ -83,7 +83,7 @@ set laststatus=2 " all the time status bar
 syntax on
 
 " fancy colorscheme
-colorscheme getafe
+colorscheme monokai
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
