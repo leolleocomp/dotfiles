@@ -2,7 +2,9 @@
 "
 " it will be updated as soon as I want to :)
 "
-"   @author leolle
+"   @author leolleo
+"
+set nocompatible
 
 " PLUGIN SETUP
 filetype off " required
