@@ -100,3 +100,9 @@ fi
 source ${ZSH}/oh-my-zsh.sh
 alias tmux='tmux -2'
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+
+# Android home config
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
