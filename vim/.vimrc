@@ -16,6 +16,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'mxw/vim-jsx'
 Plugin 'dracula/vim'
 Plugin 'larssmit/vim-getafe'
 Plugin 'ctrlpvim/ctrlp.vim'
