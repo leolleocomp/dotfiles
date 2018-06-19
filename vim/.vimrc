@@ -104,6 +104,15 @@ endif
 " NERDTree shortcut
 nmap <C-n> :NERDTreeToggle<CR>
 
+" ALEFix
+let g:ale_fixers = {
+\   'javascript': [
+\       'eslint',
+\   ],
+\}
+
+nmap <F8> <Plug>(ale_fix)
+
 " vim CtrlP settings
 " - default option an command to invoke CtrlP
 " vim controlp setup related
