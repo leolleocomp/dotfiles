@@ -16,6 +16,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" snippets!
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 Plugin 'mxw/vim-jsx'
 Plugin 'dracula/vim'
 Plugin 'larssmit/vim-getafe'
@@ -104,6 +108,15 @@ endif
 " NERDTree shortcut
 nmap <C-n> :NERDTreeToggle<CR>
 
+" Ultisnips config
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader>j"
+let g:UltiSnipsJumpBackwardTrigger="<leader>k"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " vim CtrlP settings
 " - default option an command to invoke CtrlP
 " vim controlp setup related
@@ -134,7 +147,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " Tags related mappings
 
 nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
+nnoremap <silent> <leader>b :TagbarToggle<CR>
 
 " - removing trailing whitespace
 "   as exposed in the following answer in stackoverflow
