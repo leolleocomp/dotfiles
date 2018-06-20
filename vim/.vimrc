@@ -116,6 +116,14 @@ let g:UltiSnipsJumpBackwardTrigger="<leader>k"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+" ALEFix
+let g:ale_fixers = {
+\   'javascript': [
+\       'eslint',
+\   ],
+\}
+
+nmap <F8> <Plug>(ale_fix)
 
 " vim CtrlP settings
 " - default option an command to invoke CtrlP
