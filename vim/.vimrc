@@ -21,6 +21,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 Plugin 'mxw/vim-jsx'
+Plugin 'TroyFletcher/vim-colors-synthwave'
 Plugin 'dracula/vim'
 Plugin 'larssmit/vim-getafe'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -90,7 +91,7 @@ set laststatus=2 " all the time status bar
 syntax on
 
 " fancy colorscheme
-colorscheme dracula
+colorscheme synthwave
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
