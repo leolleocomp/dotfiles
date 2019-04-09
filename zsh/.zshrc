@@ -7,7 +7,7 @@ ZSH=~/.oh-my-zsh/
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="spaceship"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -100,9 +100,16 @@ fi
 source ${ZSH}/oh-my-zsh.sh
 alias tmux='tmux -2'
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 
 # Android home config
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/android-studio/bin
+export PATH=$PATH:$HOME/build/flutter/bin
+export NODE_API_KEY=AIzaSyCN3k80EWD0y9xvk23kKaU5N1PN_Tca_L8
+
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i

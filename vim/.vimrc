@@ -20,6 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+Plugin 'posva/vim-vue'
 Plugin 'mxw/vim-jsx'
 Plugin 'TroyFletcher/vim-colors-synthwave'
 Plugin 'dracula/vim'
@@ -86,6 +87,9 @@ set noexpandtab
 set incsearch    " incremental search
 set hlsearch     " highlight search terms
 set laststatus=2 " all the time status bar
+
+" disables annoying swap files
+set noswapfile
 
 " syntax highlight
 syntax on
